@@ -62,7 +62,7 @@ return [
     | Password used to authorize ServerQuery connection.
     |
     */
-    'password' => env('TEAMSPEAK3_PASSWORD', 'secret'),
+    'password' => env('TEAMSPEAK3_PASSWORD', ''),
 
     /*
     |--------------------------------------------------------------------------

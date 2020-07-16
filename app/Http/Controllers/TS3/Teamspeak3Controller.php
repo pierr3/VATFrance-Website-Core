@@ -13,6 +13,11 @@ class Teamspeak3Controller extends Controller
      */
     public function clients()
     {
-        return TeamSpeak3::clientList();
+        $data = TeamSpeak3::clientList();
+        $users = [];
+        foreach ($data as $d) {
+            array_push($users, $d);
+        }
+        dd($users);
     }
 }
