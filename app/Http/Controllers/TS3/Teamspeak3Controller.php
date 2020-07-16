@@ -13,8 +13,6 @@ class Teamspeak3Controller extends Controller
      */
     public function clients()
     {
-        return view('teamspeak3.clients', [
-            'clients' => TeamSpeak3::clientList(),
-        ]);
+        return TeamSpeak3::clientList();
     }
 }
