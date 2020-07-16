@@ -170,6 +170,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Adams\TeamSpeak3\TeamSpeak3ServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -232,6 +233,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'TeamSpeak3' => Adams\TeamSpeak3\Facades\TeamSpeak3::class,
     ],
 
 ];

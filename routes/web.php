@@ -56,7 +56,8 @@ Route::group([
     });
 
     // DEV ROUTES
-    Route::get('/importAirports', 'ATC\AirportsController@retrieveFromJson');
+    // Route::get('/importAirports', 'ATC\AirportsController@retrieveFromJson');
+    Route::get('/ts3', 'TS3\Teamspeak3Controller@clients');
 });
 
 // Auth::routes();
